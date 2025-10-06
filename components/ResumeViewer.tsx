@@ -5,7 +5,7 @@ export default function ResumeViewer() {
     <div className="h-[75vh] w-full">
       <iframe
         title="Resume PDF"
-        src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=1"
+        src="/Resume.pdf#toolbar=0&navpanes=0&scrollbar=1"
         className="h-full w-full rounded-lg"
       />
     </div>

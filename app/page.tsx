@@ -166,7 +166,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between gap-3">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Resume</h2>
             <Button asChild variant="secondary" className="rounded-md">
-              <a href="/resume.pdf" download aria-label="Download resume PDF">
+              <a href="/Resume.pdf" download aria-label="Download resume PDF">
                 Download PDF
               </a>
             </Button>
