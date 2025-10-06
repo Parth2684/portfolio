@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Parth Bhosle, Full Stack Developer specializing in Next.js, MERN, PostgreSQL, Prisma, and modern web performance.",
   generator: "v0.app",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://parthcodes.com"),
   openGraph: {
     title: "Parth Bhosle — Full Stack Developer",
     description:
       "Portfolio of Parth Bhosle, Full Stack Developer specializing in Next.js, MERN, PostgreSQL, Prisma, and modern web performance.",
-    url: "https://example.com",
+    url: "https://parthcodes.com",
     siteName: "Parth Bhosle",
     locale: "en_US",
     type: "website",
@@ -55,6 +55,7 @@ export default function RootLayout({
 })();`,
           }}
         />
+        <link rel="icon" href="/letter-p-svgrepo-com.svg"></link>
       </head>
       <body className={cn("bg-background text-foreground min-h-screen", "scroll-smooth")}>
         <div className="flex min-h-screen flex-col">
