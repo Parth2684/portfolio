@@ -114,8 +114,36 @@ export default function HomePage() {
             className="rounded-xl border bg-card p-2 sm:p-6 shadow-sm"
             aria-hidden="true"
           >
-            <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center rounded-lg bg-muted"><img src="https://github-readme-stats.vercel.app/api?username=Parth2684&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false" height="180" alt="GitHub stats" /></div>
-            <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center items-center mt-2 rounded-lg bg-muted"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600\&langs_count=5&theme=radical&hide_border=false" height="180" alt="Top languages" /></div>
+            <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center rounded-lg bg-muted">
+              <a
+                href="https://github-readme-stats.vercel.app/api?username=Parth2684&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=Parth2684&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false"
+                  height="180"
+                  alt="GitHub stats"
+                  className="cursor-pointer"
+                />
+              </a>
+            </div>
+
+            <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center items-center mt-2 rounded-lg bg-muted">
+              <a
+                href="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=5&theme=radical&hide_border=false"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=5&theme=radical&hide_border=false"
+                  height="180"
+                  alt="Top languages"
+                  className="cursor-pointer"
+                />
+              </a>
+            </div>
+
           </motion.div>
         </div>
       </section>
