@@ -120,6 +120,21 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Projects */}
+      <section id="projects" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
+        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Projects</h2>
+          <p className="mt-3 text-sm text-muted-foreground md:text-base">
+            Selected work featuring performance-minded builds, strong UX, and production-ready architectures.
+          </p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((p) => (
+              <ProjectCard key={p.slug} project={p} />
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
       {/* About */}
       <section id="about" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
         <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
@@ -141,21 +156,6 @@ export default function HomePage() {
               <li className="rounded-md bg-muted px-3 py-2">MongoDB</li>
               <li className="rounded-md bg-muted px-3 py-2">Git / Postman</li>
             </ul>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* Projects */}
-      <section id="projects" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
-        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Projects</h2>
-          <p className="mt-3 text-sm text-muted-foreground md:text-base">
-            Selected work featuring performance-minded builds, strong UX, and production-ready architectures.
-          </p>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((p) => (
-              <ProjectCard key={p.slug} project={p} />
-            ))}
           </div>
         </motion.div>
       </section>
