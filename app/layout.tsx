@@ -55,7 +55,7 @@ export default function RootLayout({
 })();`,
           }}
         />
-        <link rel="icon" href="/letter-p-svgrepo-com.svg"></link>
+        <link rel="icon" href="/letter-p-svgrepo-com.png"></link>
       </head>
       <body className={cn("bg-background text-foreground min-h-screen", "scroll-smooth")}>
         <div className="flex min-h-screen flex-col">
