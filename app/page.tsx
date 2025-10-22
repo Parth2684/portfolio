@@ -136,7 +136,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=7&theme=radical&hide_border=false"
+                  src="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=6&theme=radical&hide_border=false"
                   height="180"
                   alt="Top languages"
                   className="cursor-pointer"
