@@ -1,16 +1,21 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import dynamic from "next/dynamic"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import ProjectCard from "@/components/ProjectCard"
-import { projects } from "@/data/projects"
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import ProjectCard from "@/components/ProjectCard";
+import { projects } from "@/data/projects";
 
 const ResumeViewer = dynamic(() => import("@/components/ResumeViewer"), {
   ssr: false,
-  loading: () => <div className="h-[75vh] w-full rounded-lg bg-muted animate-pulse" aria-busy="true" />,
-})
+  loading: () => (
+    <div
+      className="h-[75vh] w-full rounded-lg bg-muted animate-pulse"
+      aria-busy="true"
+    />
+  ),
+});
 
 function IconGitHub(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -25,7 +30,7 @@ function IconGitHub(props: React.SVGProps<SVGSVGElement>) {
         0 1.07-.01 1.93-.01 2.19 0 .21.15.45.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"
       />
     </svg>
-  )
+  );
 }
 
 function IconLinkedIn(props: React.SVGProps<SVGSVGElement>) {
@@ -36,7 +41,7 @@ function IconLinkedIn(props: React.SVGProps<SVGSVGElement>) {
         d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.62-1.85 3.33-1.85 3.56 0 4.22 2.34 4.22 5.39v6.35zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V9h3.56v11.45z"
       />
     </svg>
-  )
+  );
 }
 
 export default function HomePage() {
@@ -51,47 +56,56 @@ export default function HomePage() {
             transition={{ duration: 0.5 }}
             className="space-y-5"
           >
-            <h1 className="text-pretty text-3xl font-semibold tracking-tight md:text-5xl">Parth Bhosle</h1>
-            <p className="text-pretty text-muted-foreground md:text-lg">Full Stack Developer — Next.js | MERN </p>
-            <p className="text-pretty leading-relaxed text-sm md:text-base">
-              I build robust, performant web apps with modern stacks: Next.js, TypeScript, Prisma, PostgreSQL, and
-              MongoDB. I care deeply about elegant UX, accessibility, and clean architecture.
+            <h1 className="text-pretty text-3xl font-semibold tracking-tight md:text-5xl">
+              Parth Bhosle
+            </h1>
+            <p className="text-pretty text-muted-foreground md:text-lg">
+              Full Stack Developer — Next.js | MERN{" "}
             </p>
             <p className="text-pretty leading-relaxed text-sm md:text-base">
-            I&apos;m a full stack engineer focused on building fast, accessible, and maintainable web apps. My experience
-            spans Next.js, React, Node.js, PostgreSQL, Prisma, MongoDB, and modern tooling. I enjoy designing clean
-            architectures, optimizing performance, and shipping thoughtful UX with smooth motion.
-          </p>
+              I build robust, performant web apps with modern stacks: Next.js,
+              TypeScript, Prisma, PostgreSQL, and MongoDB. I care deeply about
+              elegant UX, accessibility, and clean architecture.
+            </p>
+            <p className="text-pretty leading-relaxed text-sm md:text-base">
+              I&apos;m a full stack engineer focused on building fast,
+              accessible, and maintainable web apps. My experience spans
+              Next.js, React, Node.js, PostgreSQL, Prisma, MongoDB, and modern
+              tooling. I enjoy designing clean architectures, optimizing
+              performance, and shipping thoughtful UX with smooth motion.
+            </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <div className="flex items-center gap-4">
-          <Link
-            href="https://github.com/Parth2684"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            <IconGitHub className="h-5 w-5" />
-          </Link>
-          <Link
-            href="https://linkedin.com/in/parth-bhosle-46a078271"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            <IconLinkedIn className="h-6 w-6" />
-          </Link>
-          <a href="mailto:bhosle6006@gmail.com" className="text-sm text-muted-foreground hover:text-foreground">
-            <Mail />
-          </a>
-          <Link href="#resume"> <File className="size-5 text-muted-foreground hover:text-foreground" /> </Link>
-
-        </div>
-              
-            
+                <Link
+                  href="https://github.com/Parth2684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  <IconGitHub className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="https://linkedin.com/in/parth-bhosle-46a078271"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  <IconLinkedIn className="h-6 w-6" />
+                </Link>
+                <a
+                  href="mailto:bhosle6006@gmail.com"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
+                  <Mail />
+                </a>
+                <Link href="#resume">
+                  {" "}
+                  <File className="size-5 text-muted-foreground hover:text-foreground" />{" "}
+                </Link>
+              </div>
             </div>
-            
 
             <div className="pt-6">
               <ul className="flex flex-wrap gap-2 text-xs text-muted-foreground md:text-sm">
@@ -121,7 +135,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=Parth2684&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false"
+                  src="https://github-readme-stats.vercel.app/api?username=Parth2684&show_icons=true&theme=radical"
                   height="180"
                   alt="GitHub stats"
                   className="cursor-pointer"
@@ -143,17 +157,26 @@ export default function HomePage() {
                 />
               </a>
             </div>
-
           </motion.div>
         </div>
       </section>
 
       {/* Projects */}
-      <section id="projects" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
-        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Projects</h2>
+      <section
+        id="projects"
+        className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+            Projects
+          </h2>
           <p className="mt-3 text-sm text-muted-foreground md:text-base">
-            Selected work featuring performance-minded builds, strong UX, and production-ready architectures.
+            Selected work featuring performance-minded builds, strong UX, and
+            production-ready architectures.
           </p>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((p) => (
@@ -164,23 +187,40 @@ export default function HomePage() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
-        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Skills</h2>
-          
+      <section
+        id="about"
+        className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+            Skills
+          </h2>
+
           <div className="mt-5 grid gap-3 text-sm md:grid-cols-3">
             <ul className="space-y-1">
-              <li className="rounded-md bg-muted px-3 py-2">JavaScript / TypeScript</li>
+              <li className="rounded-md bg-muted px-3 py-2">
+                JavaScript / TypeScript
+              </li>
               <li className="rounded-md bg-muted px-3 py-2">GCP/AWS</li>
               <li className="rounded-md bg-muted px-3 py-2">Docker</li>
             </ul>
             <ul className="space-y-1">
               <li className="rounded-md bg-muted px-3 py-2">React / Next.js</li>
-              <li className="rounded-md bg-muted px-3 py-2">Node.js / Express</li>
-              <li className="rounded-md bg-muted px-3 py-2">Framer Motion / Zustand</li>
+              <li className="rounded-md bg-muted px-3 py-2">
+                Node.js / Express
+              </li>
+              <li className="rounded-md bg-muted px-3 py-2">
+                Framer Motion / Zustand
+              </li>
             </ul>
             <ul className="space-y-1">
-              <li className="rounded-md bg-muted px-3 py-2">PostgreSQL / Prisma / pgvector</li>
+              <li className="rounded-md bg-muted px-3 py-2">
+                PostgreSQL / Prisma / pgvector
+              </li>
               <li className="rounded-md bg-muted px-3 py-2">MongoDB</li>
               <li className="rounded-md bg-muted px-3 py-2">Git / Postman</li>
             </ul>
@@ -189,10 +229,19 @@ export default function HomePage() {
       </section>
 
       {/* Resume */}
-      <section id="resume" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
-        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+      <section
+        id="resume"
+        className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
           <div className="flex items-center justify-between gap-3">
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Resume</h2>
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+              Resume
+            </h2>
             <Button asChild variant="secondary" className="rounded-md">
               <a href="/Resume.pdf" download aria-label="Download resume PDF">
                 Download PDF
@@ -209,48 +258,68 @@ export default function HomePage() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16">
-        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Contact</h2>
+      <section
+        id="contact"
+        className="mx-auto max-w-6xl scroll-mt-20 px-4 py-12 md:py-16"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+            Contact
+          </h2>
           <p className="mt-3 text-sm text-muted-foreground md:text-base">
-            I&apos;m available for new opportunities. Let&apos;s build something excellent.
+            I&apos;m available for new opportunities. Let&apos;s build something
+            excellent.
           </p>
 
           <ContactForm />
         </motion.div>
       </section>
     </div>
-  )
+  );
 }
 
-import * as React from "react"
-import { File, Mail } from "lucide-react"
+import * as React from "react";
+import { File, Mail } from "lucide-react";
 
 function ContactForm() {
-  const [name, setName] = React.useState("")
-  const [email, setEmail] = React.useState("")
-  const [message, setMessage] = React.useState("")
-  const [errors, setErrors] = React.useState<{ name?: string; email?: string; message?: string }>({})
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [errors, setErrors] = React.useState<{
+    name?: string;
+    email?: string;
+    message?: string;
+  }>({});
 
   function validate() {
-    const next: typeof errors = {}
-    if (!name.trim()) next.name = "Please enter your name"
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = "Enter a valid email"
-    if (message.trim().length < 10) next.message = "Message should be at least 10 characters"
-    setErrors(next)
-    return Object.keys(next).length === 0
+    const next: typeof errors = {};
+    if (!name.trim()) next.name = "Please enter your name";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      next.email = "Enter a valid email";
+    if (message.trim().length < 10)
+      next.message = "Message should be at least 10 characters";
+    setErrors(next);
+    return Object.keys(next).length === 0;
   }
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    if (!validate()) return
-    const subject = encodeURIComponent(`Portfolio Contact from ${name}`)
-    const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`)
-    window.location.href = `mailto:bhosle6006@gmail.com?subject=${subject}&body=${body}`
+    e.preventDefault();
+    if (!validate()) return;
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
+    window.location.href = `mailto:bhosle6006@gmail.com?subject=${subject}&body=${body}`;
   }
 
   return (
-    <form onSubmit={onSubmit} className="mt-6 grid gap-4 rounded-xl border bg-card p-6 shadow-sm" noValidate>
+    <form
+      onSubmit={onSubmit}
+      className="mt-6 grid gap-4 rounded-xl border bg-card p-6 shadow-sm"
+      noValidate
+    >
       <div>
         <label htmlFor="name" className="mb-1 block text-sm font-medium">
           Name
@@ -329,5 +398,5 @@ function ContactForm() {
         </a>
       </div>
     </form>
-  )
+  );
 }
