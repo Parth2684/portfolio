@@ -52,7 +52,7 @@ export default function HomePage() {
             className="space-y-5"
           >
             <h1 className="text-pretty text-3xl font-semibold tracking-tight md:text-5xl">Parth Bhosle</h1>
-            <p className="text-pretty text-muted-foreground md:text-lg">Full Stack Developer — Next.js | MERN</p>
+            <p className="text-pretty text-muted-foreground md:text-lg">Full Stack Developer — Next.js | MERN </p>
             <p className="text-pretty leading-relaxed text-sm md:text-base">
               I build robust, performant web apps with modern stacks: Next.js, TypeScript, Prisma, PostgreSQL, and
               MongoDB. I care deeply about elegant UX, accessibility, and clean architecture.
@@ -116,7 +116,7 @@ export default function HomePage() {
           >
             <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center rounded-lg bg-muted">
               <a
-                href="https://github-readme-stats.vercel.app/api?username=Parth2684&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false"
+                href="https://github-readme-stats.vercel.app/api?username=Parth2684&show_icons=true&theme=radical"
                 target="_blank"
                 rel="noopener noreferrer"
               >
