@@ -60,12 +60,12 @@ export default function HomePage() {
               Parth Bhosle
             </h1>
             <p className="text-pretty text-muted-foreground md:text-lg">
-              Full Stack Developer — Next.js | MERN{" "}
+              Full Stack Developer — Axum | Next.js | MERN{" "}
             </p>
             <p className="text-pretty leading-relaxed text-sm md:text-base">
-              I build robust, performant web apps with modern stacks: Next.js,
-              TypeScript, Prisma, PostgreSQL, and MongoDB. I care deeply about
-              elegant UX, accessibility, and clean architecture.
+              I build robust, performant web apps with modern stacks: Axum,
+              Next.js, TypeScript, Prisma, PostgreSQL, and MongoDB. I care
+              deeply about elegant UX, accessibility, and clean architecture.
             </p>
             <p className="text-pretty leading-relaxed text-sm md:text-base">
               I&apos;m a full stack engineer focused on building fast,
@@ -205,13 +205,13 @@ export default function HomePage() {
               <li className="rounded-md bg-muted px-3 py-2">
                 JavaScript / TypeScript
               </li>
-              <li className="rounded-md bg-muted px-3 py-2">GCP/AWS</li>
+              <li className="rounded-md bg-muted px-3 py-2">GCP / AWS / Vercel</li>
               <li className="rounded-md bg-muted px-3 py-2">Docker</li>
             </ul>
             <ul className="space-y-1">
               <li className="rounded-md bg-muted px-3 py-2">React / Next.js</li>
               <li className="rounded-md bg-muted px-3 py-2">
-                Node.js / Express
+                Axum / Node.js / Express
               </li>
               <li className="rounded-md bg-muted px-3 py-2">
                 Framer Motion / Zustand
@@ -219,9 +219,9 @@ export default function HomePage() {
             </ul>
             <ul className="space-y-1">
               <li className="rounded-md bg-muted px-3 py-2">
-                PostgreSQL / Prisma / pgvector
+                Prisma / pgvector / SeaOrm
               </li>
-              <li className="rounded-md bg-muted px-3 py-2">MongoDB</li>
+              <li className="rounded-md bg-muted px-3 py-2">PostgreSQL / MongoDB</li>
               <li className="rounded-md bg-muted px-3 py-2">Git / Postman</li>
             </ul>
           </div>
