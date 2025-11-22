@@ -203,7 +203,7 @@ export default function HomePage() {
           <div className="mt-5 grid gap-3 text-sm md:grid-cols-3">
             <ul className="space-y-1">
               <li className="rounded-md bg-muted px-3 py-2">
-                JavaScript / TypeScript
+                JavaScript / TypeScript / Rust
               </li>
               <li className="rounded-md bg-muted px-3 py-2">GCP / AWS / Vercel</li>
               <li className="rounded-md bg-muted px-3 py-2">Docker</li>
