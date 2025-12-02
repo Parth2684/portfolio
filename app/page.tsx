@@ -130,12 +130,12 @@ export default function HomePage() {
           >
             <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center rounded-lg bg-muted">
               <a
-                href="https://github-readme-stats.vercel.app/api?username=Parth2684&show_icons=true&theme=radical"
+                href="https://github-readme-stats-lilac-delta-38.vercel.app/api?username=Parth2684&show_icons=true&theme=radical"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=Parth2684&show_icons=true&theme=radical"
+                  src="https://github-readme-stats-lilac-delta-38.vercel.app/api?username=Parth2684&show_icons=true&theme=radical"
                   height="180"
                   alt="GitHub stats"
                   className="cursor-pointer"
@@ -145,12 +145,12 @@ export default function HomePage() {
 
             <div className="w-fit p-0.5 sm:p-2 shadow-xl flex justify-center items-center mt-2 rounded-lg bg-muted">
               <a
-                href="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=6&theme=radical&hide_border=false"
+                href="https://github-readme-stats-lilac-delta-38.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=4&theme=radical&hide_border=false"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://github-readme-stats.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=6&theme=radical&hide_border=false"
+                  src="https://github-readme-stats-lilac-delta-38.vercel.app/api/top-langs?username=Parth2684&locale=en&hide_title=false&layout=compact&card_width=600&langs_count=4&theme=radical&hide_border=false"
                   height="180"
                   alt="Top languages"
                   className="cursor-pointer"
