@@ -1,13 +1,13 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
-import { cn } from "@/lib/utils"
-import { Navbar } from "@/components/Navbar"
-import { Footer } from "@/components/Footer"
-import { Suspense } from "react"
+import type React from "react";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { cn } from "@/lib/utils";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Parth Bhosle — Full Stack Developer",
@@ -30,34 +30,45 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Parth Bhosle, Full Stack Developer specializing in Next.js, MERN, PostgreSQL, Prisma, and modern web performance.",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} antialiased`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+      suppressHydrationWarning
+    >
       <head>
         {/* Prevent theme flash: set initial theme before hydration */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-(function() {
-  try {
-    const ls = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = ls || (prefersDark ? 'dark' : 'light');
-    if (theme === 'dark') document.documentElement.classList.add('dark');
-    else document.documentElement.classList.remove('dark');
-  } catch (_) {}
-})();`,
+        (function () {
+          try {
+            const theme = localStorage.getItem('theme') || 'dark';
+            if (theme === 'dark') {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          } catch (_) {}
+        })();
+        `,
           }}
         />
         <link rel="icon" href="/letter-p-svgrepo-com.png"></link>
       </head>
-      <body className={cn("bg-background text-foreground min-h-screen", "scroll-smooth")}>
+      <body
+        className={cn(
+          "bg-background text-foreground min-h-screen",
+          "scroll-smooth",
+        )}
+      >
         <div className="flex min-h-screen flex-col">
           <Suspense fallback={null}>
             <Navbar />
@@ -70,5 +81,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

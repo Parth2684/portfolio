@@ -178,7 +178,7 @@ export default function HomePage() {
             Selected work featuring performance-minded builds, strong UX, and
             production-ready architectures.
           </p>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             {projects.map((p) => (
               <ProjectCard key={p.slug} project={p} />
             ))}
