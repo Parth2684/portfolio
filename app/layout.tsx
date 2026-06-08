@@ -10,25 +10,54 @@ import { Footer } from "@/components/Footer";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Parth Bhosle — Full Stack Developer",
+  title: "Parth Bhosle — Software Engineer",
   description:
-    "Portfolio of Parth Bhosle, Full Stack Developer specializing in Next.js, MERN, PostgreSQL, Prisma, and modern web performance.",
+    "Portfolio of Parth Bhosle, Software Engineer specializing in Rust, Next.js, Axum, PostgreSQL, and building high-performance applications.",
+  keywords: ["Parth Bhosle", "Software Engineer", "Rust", "Next.js", "Axum", "Full Stack Developer", "Web Development", "Portfolio"],
+  authors: [{ name: "Parth Bhosle" }],
+  creator: "Parth Bhosle",
   generator: "v0.app",
   metadataBase: new URL("https://parthcodes.com"),
   openGraph: {
-    title: "Parth Bhosle — Full Stack Developer",
+    title: "Parth Bhosle — Software Engineer",
     description:
-      "Portfolio of Parth Bhosle, Full Stack Developer specializing in Next.js, MERN, PostgreSQL, Prisma, and modern web performance.",
+      "Portfolio of Parth Bhosle, Software Engineer specializing in Rust, Next.js, Axum, PostgreSQL, and building high-performance applications.",
     url: "https://parthcodes.com",
-    siteName: "Parth Bhosle",
+    siteName: "Parth Bhosle Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://parthcodes.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Parth Bhosle Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Parth Bhosle — Full Stack Developer",
+    title: "Parth Bhosle — Software Engineer",
     description:
-      "Portfolio of Parth Bhosle, Full Stack Developer specializing in Next.js, MERN, PostgreSQL, Prisma, and modern web performance.",
+      "Portfolio of Parth Bhosle, Software Engineer specializing in Rust, Next.js, Axum, PostgreSQL, and building high-performance applications.",
+    creator: "@Parth2684",
+    images: ["https://parthcodes.com/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
   },
 };
 
