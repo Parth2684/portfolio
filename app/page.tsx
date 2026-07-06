@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
 function IconGitHub(props: React.SVGProps<SVGSVGElement>) {

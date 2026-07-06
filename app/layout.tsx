@@ -17,18 +17,18 @@ export const metadata: Metadata = {
   authors: [{ name: "Parth Bhosle" }],
   creator: "Parth Bhosle",
   generator: "v0.app",
-  metadataBase: new URL("https://parthcodes.com"),
+  metadataBase: new URL("https://parthbhosle.com"),
   openGraph: {
     title: "Parth Bhosle — Software Engineer",
     description:
       "Portfolio of Parth Bhosle, Software Engineer specializing in Rust, Next.js, Axum, PostgreSQL, and building high-performance applications.",
-    url: "https://parthcodes.com",
+    url: "https://parthbhosle.com",
     siteName: "Parth Bhosle Portfolio",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://parthcodes.com/og-image.png",
+        url: "https://parthbhosle.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Parth Bhosle Portfolio",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Parth Bhosle, Software Engineer specializing in Rust, Next.js, Axum, PostgreSQL, and building high-performance applications.",
     creator: "@Parth2684",
-    images: ["https://parthcodes.com/og-image.png"],
+    images: ["https://parthbhosle.com/og-image.png"],
   },
   robots: {
     index: true,
